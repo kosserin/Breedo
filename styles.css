@@ -1,6 +1,6 @@
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("./matt-nelson-aI3EBLvcyu4-unsplash.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("./matt-nelson-aI3EBLvcyu4-unsplash.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("./matt-nelson-aI3EBLvcyu4-unsplash (1).jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("./matt-nelson-aI3EBLvcyu4-unsplash (1).jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover;
@@ -312,7 +312,7 @@ nav {
 .image {
   width: 50%;
   height: 500px;
-  background: url("./humphrey-muleba-mmqPwkaTGCs-unsplash.jpg") 40% 20% no-repeat;
+  background: url("./humphrey-muleba-mmqPwkaTGCs-unsplash (1).jpg") 40% 20% no-repeat;
   background-size: cover;
   margin-right: 5%;
 }
