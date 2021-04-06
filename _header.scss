@@ -1,13 +1,14 @@
 @import 'media-queries';
 header{
-    background: linear-gradient(rgba(#000,.5),rgba(#000,.1)),url('./matt-nelson-aI3EBLvcyu4-unsplash\ \(1\).jpg');
+    background: linear-gradient(rgba(#000,.5),rgba(#000,.1)),url('./background.jpg');
     height: 100vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     @include phone{
-        background: linear-gradient(rgba(#000,.5),rgba(#000,1)),url('./matt-nelson-aI3EBLvcyu4-unsplash\ \(1\).jpg');
+        background: linear-gradient(rgba(#000,.5),rgba(#000,1));
+        background: url('./background.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
