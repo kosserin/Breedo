@@ -1,6 +1,6 @@
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("./matt-nelson-aI3EBLvcyu4-unsplash (1).jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("./matt-nelson-aI3EBLvcyu4-unsplash (1).jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("matt-nelson-aI3EBLvcyu4-unsplash (1).jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("matt-nelson-aI3EBLvcyu4-unsplash (1).jpg");
   height: 100vh;
   width: 100vw;
   background-size: cover;
