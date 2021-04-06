@@ -1,0 +1,197 @@
+@import 'media-queries';
+header{
+    background: linear-gradient(rgba(#000,.5),rgba(#000,.1)),url('./matt-nelson-aI3EBLvcyu4-unsplash.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    display: flex;
+    flex-basis: 100vw;
+    justify-content: space-around;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.nav-logo h1{
+    font-size: 2.5rem;
+    color:palegoldenrod;
+    font-weight: 700;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-basis: 30%;
+    @include mini{
+        flex-basis: 50%;
+    }
+    @include tablet{
+        z-index: 100;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+        height: 90vh;
+        justify-content: space-evenly;
+        background: rgba(#000,.98);
+        width: 100vw;
+        transform: translateX(100%);
+        transition: transform .5s ease;
+    }
+    & li{
+        position: relative;
+        & a{
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: palegoldenrod;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                height: 2.5px;
+                background: palegoldenrod;
+                width: 0%;
+                top: 1.4rem;
+            }
+            &:hover::before{
+                width: 100%;
+                transition: all .5s ease;
+                @include tablet{
+                    width: 11%;
+                }
+            }
+        }
+        & .active-link{
+            position: relative;
+            &:hover::before{
+                width: 100%;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                height: 2.5px;
+                background: palegoldenrod;
+                width: 50%;
+                top: 1.3rem;
+            }
+        }
+    }
+}
+.burger{
+    @include tablet{
+        cursor:pointer;
+        & div{
+            margin: 5px;
+            height: 3px;
+            width: 25px;
+            background-color:palegoldenrod;
+            transition: transform .5s ease;
+        }
+    }
+}
+
+.active{
+    transform: translateX(0);
+}
+.toggle .line1{
+    transform: rotate(45deg) translate(5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(-45deg) translate(5px,-6px);
+}
+.header-container{
+    color:white;
+    width: 50%;
+    margin: 15% 45% 0 5%;
+    @include laptop{
+        margin-top: 10%;  
+        width: 60%;  
+    }
+    @include mini{
+        width: 70%;
+    }
+    @include phone{
+        text-align: center;
+        width: 90%;
+    }
+    & h1{
+        font-size: 4rem;
+        @include laptop{
+            line-height: 65px;
+        }
+    }
+    & h3{
+        font-size: 1.5rem;
+        color: palegoldenrod;
+        @include phone{
+            font-size: 1.3rem;
+            margin-top: 10px;
+        }
+    }
+    & p{
+        font-size: .9rem;
+        color: rgb(230, 230, 230);
+        width: 70%;
+        margin-top: 5px;
+        @include phone{
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    & .button{
+        & a{
+            display: inline-block;
+            padding: 1.4rem 3.5rem;
+            border-radius: 40px;
+            color: wheat;
+            background: black;
+            text-decoration: none;
+            margin-top: 15px;
+            font-size: .9rem;
+            transition: .5s ease;
+            &:hover{
+                background: palegoldenrod;
+                color: black;
+            }
+        }
+    }
+}
+
+/* important */
+.fade-in{
+    opacity: 0;
+    transition:  opacity  350ms ease-in;
+}
+/* important */
+.fade-in.appear{
+    opacity: 1;
+}
+/* important */
+.from-left{
+    transform: translateX(-50%);
+}
+/* important */
+.from-right{
+    transform: translateX(50%);
+}
+.from-down{
+    transform: translateY(45%);
+}
+.from-down.appear{
+    transform: translateY(0);
+}
+/* important */
+.from-left,.from-right,.from-down{
+    transition: transform 400ms ease-in;
+}
+/* important */
+.from-left.appear,.from-right.appear{
+    transform: translateX(0);
+}

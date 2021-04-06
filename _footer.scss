@@ -1,0 +1,41 @@
+footer{
+    background: black;
+    color: palegoldenrod;
+    padding: 2rem 0 0 0;
+    & .copyright{
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    & ul{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        & a{
+            color: palegoldenrod;
+            text-decoration: none;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    & .socials{
+& a{
+    font-size: 3rem;
+    text-decoration: none;
+    margin: 0 30px;
+    &:first-of-type{
+        color: peru;
+    }
+    &:last-of-type{
+        color: skyblue;
+    }
+    &:hover{
+        color: white;
+    }
+}
+    } 
+}

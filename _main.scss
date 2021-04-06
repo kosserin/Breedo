@@ -1,0 +1,176 @@
+@import 'media-queries';
+
+.container{
+    margin: 5rem auto;
+    width: 80%;
+}
+#about{
+    display: flex;
+    flex-basis: 80vw;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.image{
+    width: 50%;
+    height: 500px;
+    background: url('./humphrey-muleba-mmqPwkaTGCs-unsplash.jpg') 40% 20% no-repeat;
+    background-size: cover;
+    margin-right: 5%;
+    @include tablet{
+        width: 100%;
+    }
+}
+.text{
+    width: 45%;
+    @include tablet{
+        width: 100%;
+        text-align: center;
+    }
+    & h1{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        @include tablet{
+            font-size: 1.4rem;
+            margin-top: 30px;
+        }
+    }
+    & p{
+        font-size: .9rem;
+        & span{
+            text-decoration: underline;
+            font-weight: 500;
+        }
+    }
+    & p::first-letter{
+        font-size: 1.5rem;
+    }
+}
+#gallery{
+    text-align: center;
+    & h1{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    & p{
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: gray;
+        margin-bottom: 4rem;
+    }
+}
+.gallery-container{
+    display: grid;
+    grid-template: "a b c"
+                   "d b e"
+                   "f f g";
+    grid-gap: 20px;
+    & img{
+                       width: 100%;
+                       height: 100%;
+    }
+    
+}
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: f;
+}
+.c{
+    grid-area: c;
+}
+.d{
+    grid-area: d;
+}
+.e{
+    grid-area: e;
+}
+.f{
+    grid-area: b;
+}
+.e{
+    grid-area: e;
+}
+#contact{
+    & h1,& h2{
+        text-align: center;
+    }
+    & h1{
+        font-size: 2.3rem;
+        @include tablet{
+            font-size: 1.8rem;
+        }
+    }
+    & h2{
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        @include phone{
+            font-size: 1rem;
+        }
+    }
+    & form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & input[type=submit]{
+            margin: 10px 0;
+            width: 300px;
+            border: none;
+            background: black;
+            color: palegoldenrod;
+            border-radius: 40px;
+            padding: 1.2rem 3rem;
+            cursor: pointer;
+            transition: all .5s ease;
+            &:hover{
+                background: palegoldenrod;
+                color: black;
+            }
+        }
+        & input[type=text], & input[type=email]{
+            padding: 5px;
+            width: 300px;
+            border: none;
+            border-bottom: 2px solid black;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+        & #message{
+            width: 300px !important;
+            height: 200px !important;
+            padding: 5px;
+            font-size: 1.1rem;
+            border: none;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            border-left: 2px solid black;
+            outline: none;
+        }
+    }
+}
+.social-container{
+    margin-top: 10rem;
+    & .socials{
+        display: flex;
+        justify-content: center;
+    & a{
+        display: inline-block;
+        font-size: 7rem;
+        margin: 10px 50px;
+        text-decoration: none;
+        &:first-of-type{
+            color: peru;
+        }
+        &:last-of-type{
+            color: skyblue;
+        }
+        &:hover{
+            color: black;
+            transition: 200ms;
+        }
+    }
+    }
+}
